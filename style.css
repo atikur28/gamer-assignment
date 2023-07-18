@@ -1,0 +1,187 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Header Section */
+/* Navigation Section */
+header{
+    background-color: #FFF;
+}
+.letter{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo-title{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.menu-container li{
+    list-style: none;
+    color: #3C354F;
+}
+nav li a{
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.menu{
+    margin-right: 2rem;
+}
+#follow{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 14px 25px;
+    gap: 10px;
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 38px 240px;
+}
+/* Banner Section */
+.banner-title1{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.banner-title2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.93rem;
+    font-weight: 800;
+}
+.banner-description{
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.sign-in{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    background: linear-gradient(180deg, #FF42A5 0%, #FF42A5 100%);
+    padding: 18px 35px;
+    cursor: pointer;
+}
+.rouge{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    background-color: #4EC5F7;
+    padding: 18px 35px;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+.banner-content{
+    background-image: url("./images/group\ 14.png");
+    background-repeat: no-repeat;
+    width: 40%;
+    padding-top: 8rem;
+    padding-left: 12rem;
+}
+.banner-img{
+    height: 100%;
+}
+.banner-container{
+    display: flex;
+    gap: 4.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+/* Main Section */
+main{
+    width: 80%;
+    margin: 120px auto;
+}
+/* Video Section */
+.video-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.letter-2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.video-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-container{
+        flex-direction: column;
+        margin: 2.2rem;
+    }
+    .menu{
+        margin-top: 2rem;
+    }
+    #follow{
+        /* display: inline-block; */
+        gap: 10px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-img{
+        width: 90%;
+    }
+    .banner-title2{
+        font-size: 5rem;
+    }
+    .banner-content{
+        width: 90%;
+        padding: 10px;
+        margin: 0px auto;
+        background-size: 110%;
+        padding: 2.5rem 0rem;
+    }
+}

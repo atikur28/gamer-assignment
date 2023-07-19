@@ -85,7 +85,7 @@ nav li a{
     margin-bottom: 1rem;
     cursor: pointer;
 }
-.sign-in{
+.primary-btn{
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
@@ -122,6 +122,43 @@ nav li a{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
+/* Gamer Section */
+.gamer-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.gamer-title{
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-content{
+    max-width: 540px;
+    text-align: right;
+}
+.gamer-description{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+}
+.gamer-description-2{
+    color: #534C64;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+.gamer-title-2{
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+}
 /* Main Section */
 main{
     width: 80%;
@@ -148,8 +185,7 @@ main{
     margin: 1rem 0rem;
 }
 .video-img{
-    width: 100%;
-    
+    width: 100%;  
 }
 .video-img-container{
     width: 342px;
@@ -186,6 +222,7 @@ main{
 
 /* Responsive */
 @media screen and (max-width:576px) {
+    /* Navigation Section */
     .nav-container{
         flex-direction: column;
         text-align: center;
@@ -198,9 +235,9 @@ main{
         margin-top: 2rem;
     }
     #follow{
-        /* display: inline-block; */
         gap: 10px;
     }
+    /* Banner Section */
     .banner-container{
         flex-direction: column-reverse;
         text-align: center;
@@ -217,5 +254,39 @@ main{
         margin: 0px auto;
         background-size: 110%;
         padding: 2.5rem 0rem;
+    }
+    /* Gamer Section */
+    .gamer-container{
+        background: none;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .gamer-container img{
+        width: 100%;
+    }
+    .gamer-content{
+        text-align: center;
+    }
+    /* Main Section */
+    main{
+        margin: 0px auto;
+        padding-left: 2rem;
+    }
+    /* Video Section */
+    .videos-container{
+        width: 100%;
+        text-align: center;
+    }
+    .video-img{
+        width: 100%;
+    }
+    .video-card-container{
+        flex-direction: column;
+        padding-left: 2rem;
+        text-align: center;
+    }
+    .video-card{
+        text-align: center;
     }
 }
